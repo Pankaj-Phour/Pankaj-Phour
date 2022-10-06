@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    width:100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.container{
+    background-color: black;
+    max-width: 100%;
+    max-height: 100%;
+    width: 99.5%;
+    height: 99%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.35)0px 5px 15px;
+}
+.headings{
+    font-family: cursive;
+    font-size: 24px;
+    cursor: pointer;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 10px;
+
+}
+.text{
+    font-family: cursive;
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px;
+    padding-right: 20px;
+}
+.image img{
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+}
+.image img:hover{
+    cursor: pointer;
+    /* box-shadow: rgba(255,255,255,0.35)0px 5px 15px; */
+    border: 1px solid aqua;
+}
+.special{
+    text-decoration: none;
+    font-size: 19px;
+    color: aqua;
+    cursor: pointer;
+}
+
+
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.card{
+    width: 300px;
+    height:200px;
+    box-shadow: 0 2px 4px 0 white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding-inline: 5px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+.card img{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.cardImage{
+    max-width: 100%;
+    width: 35%;
+}
+.cardName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  max-width: 100%;
+  width: 60%;
+  color: white;
+  text-align: center;
+  padding-block: 10px;
+}
