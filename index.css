@@ -170,6 +170,12 @@ body{
     align-items: center;
     padding: 10px;
 }
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
 .LanguageTool{
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -260,10 +266,30 @@ button:hover{
     box-shadow: rgba(255,255,255,0.35)0px 5px 15px;
 }
 
-
-
-
-
+@media only screen and (max-width: 768px) {
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.firstSection{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.leftSide{
+    width: 100%;
+}
+.rightSide{
+    width: 100%;
+}
+}
 
 
 
