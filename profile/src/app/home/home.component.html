@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="navicon">
+        <img src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-18.png" height="30" width="30" (click)="showNav()">
+    </div>
+    <div class="header" [ngStyle]="{'display': !shownav ?  navbar ? 'flex' : 'none' : 'flex'}">
+        <div class="navbar" >
+        <div class="navItem"><a href="/">Pankaj Phour</a></div>
+        <div class="navItem"><a href="#personal">Personal info</a></div>
+        <div class="navItem"><a href="#projects">Projects</a></div>
+        <!-- <div class="navItem"><a href="#LanguageTools">Language & Tools</a></div> -->
+        <div class="navItem"><a href="#contact">Contact</a></div>
+    </div>
+    </div>
+    <div class="content">
+        <div class="personal" id="personal">
+        <div class="writer">
+            <img src="https://readme-typing-svg.herokuapp.com?center=true&color=39ff14&lines=Hi...+I+am+Pankaj+Phour;Working+on+something+new..." width="100%" alt="Pankaj Phour" height="auto">
+        </div>
+        <div class="firstSection">
+        <div class="text">Hi.. Myself Pankaj Phour, a pasionate Web developer from india. I design and develop web pages on both <span><a href="https://reactjs.org/" target="_blank" class="special">React</a></span>  and <span><a href="https://angular.io/" target="_blank" class="special">Angular</a></span>.
+            If you want your buisness or profile to be recognized online then you can contact me. You can also share your valueable suggestions and ideas
+             with me. I just love to code, develop and fix code related bugs/errors. With me you can make your buisness grow online more fast.
+              I have a working experience of around 2 years. Currently i'm working in <span><a href="https://www.monetanalytics.com/" target="_blank" class="special">Ashmar Technologies & Research pvt. ltd.</a></span> I'm always learning 
+              something new. In my free time I try to learn some new tricks, methods and improve my coding habbits, techniques. Everyday I woke up with one purpose 
+              to make myself better from as i was yesterday. I'm so happy to code that sometime I think that I am born to code, and to develop. To see my projects you can visit my github profile <span><a href="https://github.com/Pankaj-Phour" target="_blank" class="special">https://github.com/Pankaj-Phour.</a></span>
+        </div>
+              <div class="image">
+                <img class="imgCircle" src="../../assets/Pankaj.jpg.jfif" height="300" width="300" alt="Pankaj Phour" >
+              </div>
+            </div>
+        </div>
+
+
+            <div class="projects" id="projects">
+                <div class="Heading">
+                    Projects :-
+                </div>
+            
+              
+            </div>
+            <div class="cardsData">
+            <div class="cardP" *ngFor="let data of Projects">
+                  <div  class="cardheader">{{data.name}}</div>
+                  <div class="image">
+                      <img  [src]="data.image" alt="Pankaj Phour" width="100%" height="100%">
+                  </div>
+               <div class="text cardText"> <p>{{data.description}}</p></div>
+                <div class="buttonGroup">
+                    <button>View more...</button>
+                  <button (click)="router(data.url)">View Project</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <div class="contact" id="contact">
+                <div class="leftSide">
+                <div class="footer1">
+                    <div class="items">
+                       <a href="https://github.com/Pankaj-Phour" target="_blank"> Join me</a>
+                    </div>
+                    <div class="items"><a href="https://pankaj.phour70@gmail.com" target="_blank">Contact</a></div>
+                    <div class="items"><a href="https://pankaj.phour70@gmail.com" target="_blank">Suggestion</a></div>
+                </div>
+                <div class="footer1">
+                    <div class="items">Contact :- 9518455298</div>
+                    <div class="items"><a href="https://pankaj.phour70@gmail.com" target="_blank"> pankaj.phour70@gmail.com</a></div>
+                    <div class="items"><a href="https://www.monetanalytics.com/" target="_blank">Ashmar Technologies & Research pvt. ltd.</a></div>
+                    <div class="items">Sec. 48 Gurgaon</div>
+                </div>
+            </div>
+            <div class="rightSide">
+                <form>
+                    <div class="formGroup">
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="formGroup">
+                        <label for="contact">Contact :</label>
+                        <input type="number" id="contact" placeholder="Enter your Contact no.">
+                    </div>
+                    <button type="button" onclick="submit()">Submit</button>
+                </form>
+            </div>
+            </div>
+         
+    
+
+</div>
