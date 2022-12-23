@@ -46,8 +46,11 @@ body {
     box-sizing: border-box;
     // background-color: #086c75;
     background-color: black;
-    box-shadow: rgba(57,255,20, 0.35)0px 5px 15px;
-    color: rgb(57, 255, 20);
+    // box-shadow: rgba(57,255,20, 0.35)0px 5px 15px;
+    box-shadow: rgba(255,255,255,0.45) 2px 2px 8px 4px;
+    margin-top: 20px;
+    // color: rgb(57, 255, 20);
+    color: white;
     margin-inline: 20px;
 
 }
@@ -69,7 +72,8 @@ body {
 
 .navItem a {
     text-decoration: none;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
 }
 
 .firstSection {
@@ -87,7 +91,8 @@ body {
     text-align: justify;
     padding: 10px;
     padding-right: 20px;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
 }
 .cardText{
     width: 90%;
@@ -122,7 +127,8 @@ body {
     font-weight: 700;
     font-family: cursive;
     padding-left: 20px;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
     padding-bottom: 2%;
 }
 
@@ -158,7 +164,7 @@ body {
 
 .card:hover {
     cursor: pointer;
-    box-shadow: rgba(3, 42, 46, 0.35) 0px 5px 15px;
+    // box-shadow: rgba(3, 42, 46, 0.35) 0px 5px 15px;
 }
 
 .card img {
@@ -207,18 +213,21 @@ body {
     justify-content: space-around;
     // background-color: #086c75;
     background-color: black;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
     max-width: 100%;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: rgba(57,255,20, 0.35)0px 5px 15px;
+    box-shadow: rgba(255,255,255,0.45) 6px 6px 8px 5px;
+    // box-shadow: rgba(57,255,20, 0.35)0px 5px 15px;
 
 }
 
 .items a {
     text-decoration: none;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
 }
 
 .leftSide {
@@ -276,7 +285,7 @@ input {
     padding: 10px;
     outline: none;
     border: 1px solid gray;
-    color: gray;
+    color: black;
     width: 100%;
 }
 
@@ -307,12 +316,14 @@ button {
     color: white;
     max-width: fit-content;
     width: 100%;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
 }
 
 button:hover {
-    box-shadow: rgba(255, 255, 255, 0.35)0px 5px 15px;
-    border: 1px solid rgb(57, 255, 20);
+    // box-shadow: rgba(255, 255, 255, 0.35)0px 5px 15px;
+    // border: 1px solid rgb(57, 255, 20);
+    border: 1px solid gray;
 }
 
 .cardheader {
@@ -321,7 +332,8 @@ button:hover {
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    color: rgb(57, 255, 20);
+    // color: rgb(57, 255, 20);
+    color: white;
     font-size: 34px;
 }
 
@@ -414,12 +426,15 @@ button:hover {
     padding-block: 2%;
     background-color: black;
     row-gap: 15px;
-    box-shadow: rgba(57,255,20, 0.35)0px 2px 4px;
+    // box-shadow: rgba(57,255,20, 0.35)0px 2px 4px;
+    box-shadow: rgba(255,255,255,0.25) 1px 2px 4px;
     margin-block: 1%;
 
 }
 .cardP:hover{
-    box-shadow: rgba(57,255,20, 0.25) 0px 54px 55px, rgba(57,255,20, 0.12) 0px -12px 30px, rgba(57,255,20, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    // box-shadow: rgba(57,255,20, 0.25) 0px 54px 55px, rgba(57,255,20, 0.12) 0px -12px 30px, rgba(57,255,20, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(255,255,255,0.35) 2px 4px 8px ;
+    cursor: pointer;
 }
 
 .cardP .image {
