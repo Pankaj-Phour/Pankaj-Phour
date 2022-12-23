@@ -1,5 +1,5 @@
 
-<img src="https://readme-typing-svg.herokuapp.com?center=true&color=27F74E&lines=Hi...+I+am+Pankaj+Phour;Working+on+something+new..." width="100%">
+<img src="https://readme-typing-svg.herokuapp.com?center=true&color=000000&lines=Hi...+I+am+Pankaj+Phour;Working+on+something+new..." width="100%">
 <hr/>
 
 <img height="300" width="300" alt="Pankaj Phour" align="right" src="https://avatars.githubusercontent.com/u/95477824?s=400&u=1cfe156cd2557717d088bbf3673f7077530609a2&v=4">
