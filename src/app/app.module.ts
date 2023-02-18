@@ -7,12 +7,16 @@ import { HomeComponent } from './home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { ProjectComponent } from './project/project.component';
 import {MatIconModule} from '@angular/material/icon';
+import { LandingComponent } from './landing/landing.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectComponent
+    ProjectComponent,
+    LandingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

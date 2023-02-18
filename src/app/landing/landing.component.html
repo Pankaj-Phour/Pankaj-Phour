@@ -1,0 +1,50 @@
+<div class="body" >
+    <div class="parent" *ngIf="!loading">
+        <div class="top">
+            <app-navbar></app-navbar>
+        </div>
+        <div class="bottom">
+         <div class="container">
+            <div class="intro section">
+                <div class="text1">Hi, my name is</div>
+                <div class="text2">Pankaj Phour</div>
+                <div class="text3">I build things for the web.</div>
+                <div class="text4">I’m a software engineer specializing in building (and occasionally designing) web applications. Currently, I’m focused on human emotions and reactions data analyzation.</div>
+                <div class="buttonDiv">
+                    <button class="introButton">Connect with me</button>
+                </div>
+            </div>
+            <div class="about section">
+                <div class="aboutleft">
+                    <div class="leftText1">Hello! My name is Pankaj Phour and I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try creating some designs for web pages — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</div>
+                    <div class="leftText2">Fast-forward to today, and I’ve had the privilege of working at a start-up company(service based) and then in a huge corporation(product based). My main focus these days is building web applications with reusable code and digital experiences at Monet Networks for a variety of clients.</div>
+                    <div class="leftText3">I also recently build some of my own projects to get user's video, face detection, location detector, Tour-Travels website and these days i've been working to build a chat application. You can view my projects at <a href="https://github.com/pankaj-phour" class="link">My Github Account.</a></div>
+                </div>
+                <div class="aboutright">
+                    <img src="https://avatars.githubusercontent.com/u/95477824?v=4" height="100%" width="100%" >
+                </div>
+            </div>
+            <div class="projects section" *ngFor="let data of Projects;let i=index">
+                <div class="project1" [ngStyle]="{'display':'flex','flex-direction':i%2!==0 ? 'row' : 'row-reverse'}">
+                    <div class="aboutleft">
+                        <div class="leftText1">
+                            <!-- In this project user is asked for location permission as the page loads/initializes. And as the user allows location permission the project loads world map and then detects user's ip address and locate it onthe world map. It zooms out the location upto 18 times and put a marker on the user's location. It's accuracy rate is above 90%. This project is built on Angular version 14 and node version 16.16.0. You can use this project and it's code according to your use. Feel free to use the code but don't forget to give it  a star if you like it. -->
+                            {{data.description}}
+                        </div>
+                    </div>
+                    <div class="aboutright">
+                        <!-- <img src="https://pankajphour.netlify.app/assets/Map.png" alt="Project image" width="100%" height="100%"> -->
+                        <img [src]="data.image" alt="Project image" width="100%" height="100%">
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="loader" id="loader" *ngIf="loading">
+    <img src="/assets/logo.gif" height="70" width="70" alt="Loader">
+</div>
