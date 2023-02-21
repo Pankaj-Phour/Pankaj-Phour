@@ -36,4 +36,8 @@ loading:boolean = true;
     }, 1000);
   }
 
+
+  connect(){
+    window.open('https://github.com/pankaj-phour','_blank')
+  }
 }
