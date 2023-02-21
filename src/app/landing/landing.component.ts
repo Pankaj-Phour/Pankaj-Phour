@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 loading:boolean = true;
+Sliding:boolean = false;
   constructor() { }
   Projects:any = [
     { name:'Get User Location' , image:'/assets/Map.png' , description:"In this project user is asked for location permission as the page loads/initializes. And as the user allows location permission the project loads world map and then detects user's ip address and locate it onthe world map. It zooms out the location upto 18 times and put a marker on the user's location. It's accuracy rate is above 90%. This project is built on Angular version 14 and node version 16.16.0. You can use this project and it's code according to your use. Feel free to use the code but don't forget to give it  a star if you like it.", url:'https://pankajphour-getuserlocation.netlify.app/'},
@@ -21,7 +22,8 @@ loading:boolean = true;
     setTimeout(() => {
       // loader.style.display = 'none'
       localStorage.setItem('loader',JSON.stringify(false))
-      this.checkLoading()
+      this.checkLoading();
+      this.imageDivChecker()
     }, 1000);
   }
 
@@ -33,11 +35,29 @@ loading:boolean = true;
         JSON.parse(loader)
      JSON.parse(loader)!==false ? this.checkLoading() : this.loading = false;
       }
-    }, 1000);
+    }, 1800);
   }
 
 
   connect(){
     window.open('https://github.com/pankaj-phour','_blank')
+  }
+
+
+  imageDivChecker() {
+
+    const div = document.getElementById('section')
+    const a = div ? div.getBoundingClientRect() : ''
+    // console.log("Checking getBoundingClientRect function",a,div);
+    if (a  && a.bottom > 100) {
+      console.log("Show sliding");
+      this.Sliding = true;
+    }
+    else {
+      this.Sliding = false;
+    }
+    setTimeout(() => {
+      this.imageDivChecker()
+    }, 100);
   }
 }

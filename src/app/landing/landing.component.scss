@@ -193,3 +193,89 @@
     top: 50%;
     z-index: 100;
 }
+
+
+
+
+
+
+
+
+
+
+// CSS for the sliding sections 
+
+// #section1{
+//     animation: slide1 0.5s forwards;
+//     animation-delay: 1s;
+//     // opacity: 0.3;
+//     position: absolute;
+//     left: -600px;
+//   }
+
+//   @-webkit-keyframes slide1 {
+//     100% { left: 0%; }
+//   }
+//   @keyframes slide1 {
+//     100% { left: 0%; }
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+// MediaQuesries for the Mobile UI 
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        max-width: 100%;
+        width: 80%;
+    }
+    .text2{
+        font-size: 45px;
+    }
+    .text3{
+        font-size: 45px;
+        line-height: 1;
+    }
+    .text4{
+        font-size: 14px;
+        width: 100%;
+    }
+    .project1,.about{
+        display: flex;
+        flex-direction: column !important;
+        font-size: 12px !important;
+        row-gap: 15px;
+        padding-block: 4% !important;
+        border-bottom: 2px solid gray;
+    }
+    .aboutleft{
+        font-size: 12px !important;
+        max-width: 100%;
+        width: 85%;
+        border: none;
+    }
+    .aboutright{
+        max-width: 100%;
+        width: 85%;
+    }
+    .rightSide{
+        display: none;
+    }
+    .leftSide{
+        display: none;
+    }
+}

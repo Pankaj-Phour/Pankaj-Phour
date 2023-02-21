@@ -14,3 +14,32 @@
         </div>
     </div>
 </div>
+
+<div class="device" [ngStyle]="{'height':navOpen ? '600px' : '60px'}">
+	<div class="container">
+		<button id="burger" class="open-main-nav" (click)="toggleNav()" [ngStyle]="{'padding-top': navOpen ? '0px' : ''}">
+			<span class="burger" *ngIf="!navOpen"></span>
+            <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/cross.png" height="30" width="30" ></div>
+			<!-- <span class="burger-text">Menu</span> -->
+		</button>
+		<nav class="main-nav" id="main-nav">
+			<ul>
+				<li>
+					<a href="#">About me</a>
+				</li>
+				<li>
+					<a href="#">Experience</a>
+				</li>
+				<li>
+					<a href="#">Projects</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+				<li>
+					<a href="#">Resume</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>

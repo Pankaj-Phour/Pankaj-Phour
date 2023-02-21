@@ -14,7 +14,9 @@
                     <button class="introButton" (click)="connect()">Connect with me</button>
                 </div>
             </div>
-            <div class="about section">
+            <!-- <ng-container id="section"> -->
+                <div id="section">
+            <div class="about section" [id]="Sliding ? 'section1' : ''">
                 <div class="aboutleft">
                     <div class="leftText1">Hello! My name is Pankaj Phour and I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try creating some designs for web pages — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</div>
                     <div class="leftText2">Fast-forward to today, and I’ve had the privilege of working at a start-up company(service based) and then in a huge corporation(product based). My main focus these days is building web applications with reusable code and digital experiences at Monet Networks for a variety of clients.</div>
@@ -24,6 +26,8 @@
                     <img src="https://avatars.githubusercontent.com/u/95477824?v=4" height="100%" width="100%" >
                 </div>
             </div>
+                </div>
+        <!-- </ng-container> -->
             <div class="projects section" *ngFor="let data of Projects;let i=index">
                 <div class="project1" [ngStyle]="{'display':'flex','flex-direction':i%2!==0 ? 'row' : 'row-reverse'}">
                     <div class="aboutleft">
@@ -37,7 +41,6 @@
                         <img [src]="data.image" alt="Project image" width="100%" height="100%" class="image">
                     </div>
                 </div>
-                
             </div>
             </div>
             <div class="rightSide">
