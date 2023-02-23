@@ -6,10 +6,10 @@ import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {path:'landing', component: LandingComponent},
+  {path:'', component: LandingComponent},
   {path:'nav', component: NavbarComponent},
   {path:'home', component: HomeComponent},
-  {path:'', component: FooterComponent},
+  {path:'footer', component: FooterComponent},
 ];
 
 @NgModule({
