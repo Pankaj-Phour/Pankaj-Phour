@@ -1,0 +1,25 @@
+<div class="body">
+    <div class="footer">
+        <div class="left">
+            <img src="/assets/contact-bottom.jpg"  alt="footer image" >
+        </div>
+        <div class="right">
+            <div class="form">
+                <form [formGroup]="contactForm">
+                    <div class="formGroup">
+                        <input type="text" placeholder="Enter your name" formControlName="name" >
+                        <p class="error" *ngIf="contactForm.get('name').hasError('required') && contactForm.get('name').touched">*Name is required.</p>
+                    </div>
+                    <div class="formGroup">
+                        <input type="email" placeholder="Enter your email" formControlName="email" >
+                        <p class="error" *ngIf="contactForm.get('email').hasError('required') && contactForm.get('email').touched">*Email is required.</p>
+                    </div>
+                    <div class="formGroup">
+                        <textarea rows="20" cols="80" placeholder="Enter your Message" formControlName="message" ></textarea>
+                        <!-- <p class="error" *ngIf="contactForm.get('contact').hasError('required') && contactForm.get('contact').touched">*Message is required.</p> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

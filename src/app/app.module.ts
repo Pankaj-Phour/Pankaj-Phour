@@ -9,6 +9,8 @@ import { ProjectComponent } from './project/project.component';
 import {MatIconModule} from '@angular/material/icon';
 import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,16 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     ProjectComponent,
     LandingComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
