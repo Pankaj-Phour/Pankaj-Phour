@@ -1,7 +1,7 @@
 <div class="body">
     <div class="footer">
         <div class="left">
-            <img src="/assets/contact-bottom.jpg"   alt="footer image" >
+            <img src="/assets/contact.png"   alt="footer image" >
         </div>
         <div class="right">
             <div class="form">
@@ -22,7 +22,7 @@
                         <!-- <p class="error" *ngIf="contactForm.get('contact').hasError('required') && contactForm.get('contact').touched">*Message is required.</p> -->
                     </div>
                     <div class="buttongroup">
-                        <button >Submit</button>
+                        <button [ngClass]="contactForm.valid  ? 'submit' : ''" [ngStyle]="{'border':contactForm.valid ? '1px solid #378c78' : '', 'color': contactForm.valid ? '#378c78' : 'white'}">Submit</button>
                     </div>
                 </form>
             </div>
