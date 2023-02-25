@@ -69,6 +69,7 @@ label{
     font-weight: 500;
     font-family: 'roboto';
     color: white;
+    // color: #378c78;
 }
 .error{
     color: red;
@@ -83,7 +84,7 @@ label{
     padding: 10px;
     // border-radius: 8px;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #378c78;
     outline: none;
     width: 90%;
     background-color: transparent;
@@ -104,4 +105,10 @@ button{
     color: white;
     background-color: transparent;
     border: 1px solid gray;
+}
+
+.submit:hover{
+    background-color: #378c78;
+    color: white  !important;
+    border: 1px solid white;
 }
