@@ -44,6 +44,13 @@
     font-size: 18px;
     cursor: pointer;
 }
+.resumebtn a{
+	text-decoration: none;
+	color: white;
+}
+.resumebtn a:hover{
+	text-decoration: none;
+}
 .resumebtn:hover{
     box-shadow: rgba(83, 172, 31, 0.56) 0px 3px 6px 2px;
     background-color: #378c78;
