@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FooterComponent implements OnInit {
   contactForm:FormGroup;
-  constructor(private _fb:FormBuilder) { }
+  constructor(private _fb:FormBuilder, private api:ApiService) { }
 formValidation(){
   this.contactForm = this._fb.group({
     name:['',Validators.required],
@@ -18,6 +19,13 @@ formValidation(){
 }
   ngOnInit(): void {
     this.formValidation();
+  }
+
+  submit(){
+    this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
+      console.log("response from api",next);
+      
+    })
   }
 
 }

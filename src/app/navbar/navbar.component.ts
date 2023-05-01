@@ -30,6 +30,9 @@ toggleNav(){
 
 /* Onload demo - dirty timeout */
 
+reload(){
+  window.location.reload();
+}
 }
 
 
