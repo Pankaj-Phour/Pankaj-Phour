@@ -8,6 +8,13 @@
 *{
     font-family: 'roboto';
 }
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+a:hover{
+    text-decoration: none;
+}
 .link{
     text-decoration: none;
     color: #378c78;
@@ -179,7 +186,7 @@
 }
 .email:hover{
     padding-right: 5px;
-    color: #378c78;
+    color: #378c78 !important;
 }
 .line{
     transform: rotate(90deg);
