@@ -9,7 +9,7 @@ export const environment = {
   // Url : 'http://localhost:3000'
 
   // URL for production 
-  Url : 'https://locationapi.onrender.com/:3000'
+  Url : 'https://locationapi.onrender.com'
 };
 
 /*
