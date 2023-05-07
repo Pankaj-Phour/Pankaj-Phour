@@ -5,7 +5,11 @@
 export const environment = {
   production: false,
 
-  Url : 'http://localhost:3000'
+  // URL for testing 
+  // Url : 'http://localhost:3000'
+
+  // URL for production 
+  Url : 'https://locationapi.onrender.com'
 };
 
 /*

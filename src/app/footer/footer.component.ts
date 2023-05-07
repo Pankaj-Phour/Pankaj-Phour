@@ -24,7 +24,7 @@ formValidation(){
   submit(){
     this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
       console.log("response from api",next);
-      
+      this.contactForm.reset();
     })
   }
 
