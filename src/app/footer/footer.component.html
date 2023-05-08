@@ -17,7 +17,7 @@
                         <p class="error" *ngIf="contactForm.get('email').hasError('required') && contactForm.get('email').touched">*Email is required.</p>
                     </div>
                     <div class="formGroup">
-                        <label for="name">Details</label>
+                        <label for="name">Message</label>
                         <textarea style="resize:none" rows="3" cols="80" class="input" placeholder="Enter your Message" formControlName="message" ></textarea>
                         <!-- <p class="error" *ngIf="contactForm.get('contact').hasError('required') && contactForm.get('contact').touched">*Message is required.</p> -->
                     </div>
