@@ -8,7 +8,7 @@
                 <div class="item">About</div>
                 <div class="item">Experience</div>
                 <div class="item">Projects</div>
-                <div class="item">Contact</div>
+                <div class="item" routerLink="/contact">Contact</div>
                 <button class="resumebtn"><a href="/assets/pankaj.pdf" download="/assets/pankaj.pdf" style="text-decoration: none;">Resume</a></button>
             </div>
         </div>
@@ -17,6 +17,9 @@
 
 <div class="device" [ngStyle]="{'height':navOpen ? '600px' : '60px'}">
 	<div class="container">
+		<div class="left">
+            <img src="/assets/logo.png" height="55" width="50" style="cursor: pointer;" (click)="reload()">
+        </div>
 		<button id="burger" class="open-main-nav" (click)="toggleNav()" [ngStyle]="{'padding-top': navOpen ? '0px' : ''}">
 			<span class="burger" *ngIf="!navOpen"></span>
             <div class="crossIcon" *ngIf="navOpen" style="padding-top: 0px;"><img src="/assets/cross.png" height="30" width="30" ></div>
@@ -25,16 +28,16 @@
 		<nav class="main-nav" id="main-nav">
 			<ul>
 				<li>
-					<a href="#">About me</a>
+					<p>About me</p>
 				</li>
 				<li>
-					<a href="#">Experience</a>
+					<p>Experience</p>
 				</li>
 				<li>
-					<a href="#">Projects</a>
+					<p>Projects</p>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<p routerLink="/contact">Contact</p>
 				</li>
 				<li>
 					<a href="/assets/pankaj.pdf" download="/assets/pankaj.pdf">Resume</a>

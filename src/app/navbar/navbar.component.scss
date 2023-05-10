@@ -132,26 +132,26 @@
 }
 
 /* Apparition effect on links */
-.main-nav a {
+.main-nav a,p {
     opacity: 0;
     transform: translateY(-10px);
 }
 
-.main-nav.is-open a {
+.main-nav.is-open a,p {
     opacity: 1;
     transform: translateY(0);
     color: #378c78;
 }
-.main-nav li:nth-child(1) a {
+.main-nav li:nth-child(1) p {
 	transition: all 275ms 175ms
 }
-.main-nav li:nth-child(2) a {
+.main-nav li:nth-child(2) p {
 	transition: all 275ms 225ms
 }
-.main-nav li:nth-child(3) a {
+.main-nav li:nth-child(3) p {
 	transition: all 275ms 275ms
 }
-.main-nav li:nth-child(4) a {
+.main-nav li:nth-child(4) p {
 	transition: all 275ms 325ms
 }
 .main-nav li:nth-child(5) a {
@@ -165,7 +165,7 @@
 	list-style: none;
 	padding: 0;
 }
-.main-nav a {
+.main-nav a,p {
 	display: block;
 	padding: 12px 0;
 	// color: #5A3B5D;
@@ -178,7 +178,7 @@
 /* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
 .open-main-nav {
 	position: absolute;
-	top: 15px;
+	top: 25px;
 	padding-top: 20px;
 	right: 15px;
 	z-index: 1000;
@@ -256,7 +256,8 @@
 	background: #378c78;
 	// border: 1px solid #EEE;
 	// border-radius: 3px;
-	box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+	// box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+	padding-block: 10px;
 }
 
 .container {
@@ -266,6 +267,8 @@
 	overflow: hidden;
 	// background: linear-gradient(to bottom, #eee, #ddd);
 	background: black;
+	display: flex;
+	align-items: center;
 }
 
 html {
@@ -292,7 +295,9 @@ body {
 	cursor: pointer;
 	transition: all .275s;
 }
-
+li p:hover{
+	cursor: pointer;
+}
 [id="slowmo"] span {
 	display: block;
 	font-weight: normal;
