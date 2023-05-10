@@ -23,9 +23,18 @@ formValidation(){
   }
 
   submit(){
+    setTimeout(() => {
+      this.api.obNotify({
+        start:true,
+        code:200,
+        status:'success',
+        message:'Details Submitted Successfully'
+      })
+      this.contactForm.reset();
+      
+    }, 2000);
     this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
       console.log("response from api",next);
-      this.contactForm.reset();
     })
   }
 

@@ -34,13 +34,8 @@ toggleNav(){
 
 reload(){
   // window.location.reload();
-  this.api.obNotify({
-    start:true,
-    code:200,
-    status:'success',
-    message:'Hello user'
-  })
-  // this.router.navigate(['/'])
+
+  this.router.navigate(['/'])
 }
 }
 
