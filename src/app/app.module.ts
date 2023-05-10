@@ -14,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotifyComponent } from './notify/notify.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ContactComponent } from './contact/contact.component';
     NavbarComponent,
     FooterComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    NotifyComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

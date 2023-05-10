@@ -1,0 +1,44 @@
+
+@keyframes mymove {
+    0% {left: 300px;}
+    100% {left: 0;}
+  }
+  
+  @keyframes exit {
+    0% {left: 0;}
+    100% {left: 300px;}
+  }
+  .notify-circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .notify-close {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: 0;
+    // height: 100%;
+    top: 50%;
+    border-radius: 0 50px 50px 0;
+    /* padding: 6px; */
+    // width: 12%;
+    // font-size: 14px;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #ffffff !important;
+  }
+  .close:hover {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #000000 !important;
+  }
+  .material-icons {
+    color: #FFFFFF !important;
+    font-size: 24px;
+  }
+  

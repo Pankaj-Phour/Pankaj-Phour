@@ -172,3 +172,20 @@ button{
     color: #378c78  !important;
     border: 1px solid white;
 }
+
+
+@media only screen and (max-width:768px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .left{
+        max-width: 100%;
+        width: 100%;
+    }
+    .right{
+        max-width: 100%;
+        width: 100%;
+    }
+}

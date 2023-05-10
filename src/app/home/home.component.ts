@@ -1,4 +1,5 @@
 import { Component, DoCheck, HostListener, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit, DoCheck {
     { name:'Node Api' , image:'../../assets/nodeApi.png' , description:"This is a node project built on node version 16.16.0. In this project you'll find a lot of api that are being used in my angular and React projects. This project is being hosted on heroku and can be used in any corner of world. This project's api use my personal online mongodb to store and fetch data. Here you'll find api's for video storing and image storing. This project contains api's of GET, POST and UDATE type. This is the backend of all my dynamic projects. As this project is hosted for free therefore it have a limit of 100 requests per day. You can call the api's only 100 times. I'm working on it to find a better solution for it's hosting and to solve it's call request problem. You can use this project and it's code according to your use. Feel free to use the code but don't forget to give it  a star if you like it.", url:'https://nodeapi-pwyk.onrender.com/'},
     { name:'Face Detection' , image:'../../assets/faceDetection.png' , description:"This is a project built on Angular version 14 and node version 16.16.0. In this project there is a camera component in which we ask user for camera permission as the page loads/initializes. And as the user allows camera permission a video element renders on the screen  with user's webcam video feed as video's src in it. Then the project loads some models from TensorFlow and use them to detect what is inside of the video  feed of user. Then it checks the data and fetch out the number of person visible in the user's webcam. It's accuracy rate is above 90%. You can use this project and it's code according to your use. Feel free to use the code but don't forget to give it  a star if you like it.", url:'https://pankajphour-uservideo.netlify.app/'},
   ]
-  constructor() { }
+  constructor(private api:ApiService) { }
 
 @HostListener('window:resize',['$event'])
 
