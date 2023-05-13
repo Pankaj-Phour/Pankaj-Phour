@@ -1,0 +1,191 @@
+*{
+    font-family: 'roboto';
+}
+.top{
+    display: flex;
+    width: 100vw;
+}
+.body{
+    overflow: hidden;
+}
+
+.contact{
+    background-color: #378c78;
+    max-width: 100vw;
+    width: 100vw;
+    height: calc(100vh - 79px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    max-width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+
+}
+.heading{
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    font-family: 'roboto';
+    padding: 10px;
+}
+.subheading{
+    max-width: 400px;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(219, 217, 217);
+    padding: 10px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    color: white;
+    max-width: 250px;
+    width: 100%;
+}
+.addressList{
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.addressList:hover{
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.Connect{
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.links{
+    cursor: pointer;
+}
+
+// CSS for  the form UI 
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    max-height: 100%;
+    height: 90%;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding-inline: 20px;
+}
+form{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.formGroup{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+
+label{
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'roboto';
+    color: #378c78;
+    padding-bottom: 0px;
+    // color: #378c78;
+}
+.error{
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: -15%;
+    left: 12%;
+}
+
+.input{
+    padding: 10px;
+    // border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid #378c78;
+    outline: none;
+    width: 90%;
+    background-color: transparent;
+    color: gray;
+}
+.buttongroup{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+button{
+    padding-block: 8px;
+    padding-inline: 30px;
+    font-size: 19px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #378c78;
+    background-color: transparent;
+    border: 2px solid #378c78;
+}
+
+.submit:hover{
+    background-color: #378c78;
+    color: #378c78  !important;
+    border: 1px solid white;
+}
+
+
+@media only screen and (max-width:768px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .left{
+        max-width: 100%;
+        width: 100%;
+    }
+    .right{
+        max-width: 100%;
+        width: 100%;
+    }
+}

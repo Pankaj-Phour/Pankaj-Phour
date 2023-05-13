@@ -3,11 +3,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class ContactComponent implements OnInit {
+
   contactForm:FormGroup;
   constructor(private _fb:FormBuilder, private api:ApiService) { }
 formValidation(){
@@ -27,10 +28,11 @@ formValidation(){
         start:true,
         code:200,
         status:'success',
-        message:'Details submitted successfully.'
+        message:'Details Submitted Successfully'
       })
       this.contactForm.reset();
-    }, 3000);
+      
+    }, 2000);
     this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
       console.log("response from api",next);
     })

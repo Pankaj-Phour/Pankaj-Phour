@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +11,7 @@ export class NavbarComponent implements OnInit {
 nav:any;
 burger:any;
 navOpen:boolean = false;
-  constructor() { }
+  constructor(private router:Router, private api:ApiService) { }
 
   ngOnInit(): void {
     this.burger = document.getElementById('burger');
@@ -31,7 +33,9 @@ toggleNav(){
 /* Onload demo - dirty timeout */
 
 reload(){
-  window.location.reload();
+  // window.location.reload();
+
+  this.router.navigate(['/'])
 }
 }
 

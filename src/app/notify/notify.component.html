@@ -1,0 +1,15 @@
+<div [ngStyle]="style">
+    <!--<mat-progress-bar mode="determinate" value={{this.v}} [ngStyle]="{'position': 'absolute', 'top': '0', 'left': '0'}"></mat-progress-bar>-->
+    <!--<div [ngStyle]="{'height': '18px'}"></div>-->
+    <div  [ngStyle]="{'padding': '8px'}" style="display: flex;align-items: center;">
+      <div style="display: flex;">
+        <mat-icon>{{status === 'success' ? 'check_circle' : status === 'error' ? 'error_outline' : status === 'warn' ? 'warning' : 'info'}}</mat-icon>
+      </div>
+      <div [innerHTML]="message" fxLayout="column"  fxLayoutAlign="start center" [ngStyle]="{'padding': '8px 8px', 'font-weight': '100'}" style="width:80%"></div>
+      <div fxLayoutAlign="center center" [ngClass]="['notify-close']" (click) = notifyDelete()>
+        <!--<i [ngClass]="['material-icons']" [ngStyle]="{'color': style.color, 'font-size': '18px', 'cursor': 'pointer'}" (click) = notifyDelete()>close</i>-->
+        <mat-icon [ngStyle]="{'font-size': '18px', 'height':'20px'}">close</mat-icon>
+      </div>
+    </div>
+  </div>
+  
