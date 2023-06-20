@@ -172,12 +172,20 @@ button{
     color: #378c78  !important;
     border: 1px solid white;
 }
-
+a{
+    text-decoration: none !important;
+    color: white;
+}
+.links img:hover{
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+}
 
 @media only screen and (max-width:768px){
     .contact{
         display: flex;
         flex-direction: column;
+        height: 100%;
 
     }
     .left{
@@ -187,5 +195,8 @@ button{
     .right{
         max-width: 100%;
         width: 100%;
+    }
+    .error{
+        left: 20%;
     }
 }
