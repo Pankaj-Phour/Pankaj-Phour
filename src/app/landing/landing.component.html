@@ -1,8 +1,8 @@
 <div class="body" >
     <div class="parent" *ngIf="!loading">
-        <div class="top">
-            <app-navbar></app-navbar>
-        </div>
+        <!-- <div class="top"> -->
+            <!-- <app-navbar></app-navbar> -->
+        <!-- </div> -->
         <div class="bottom">
          <div class="container">
             <div class="intro section">
@@ -27,17 +27,14 @@
                 </div>
             </div>
                 </div>
-        <!-- </ng-container> -->
             <div class="projects section" *ngFor="let data of Projects;let i=index">
                 <div class="project1" [ngStyle]="{'display':'flex','flex-direction':i%2!==0 ? 'row' : 'row-reverse'}">
                     <div class="aboutleft">
                         <div class="leftText1">
-                            <!-- In this project user is asked for location permission as the page loads/initializes. And as the user allows location permission the project loads world map and then detects user's ip address and locate it onthe world map. It zooms out the location upto 18 times and put a marker on the user's location. It's accuracy rate is above 90%. This project is built on Angular version 14 and node version 16.16.0. You can use this project and it's code according to your use. Feel free to use the code but don't forget to give it  a star if you like it. -->
                             {{data.description}}
                         </div>
                     </div>
                     <div class="aboutright">
-                        <!-- <img src="https://pankajphour.netlify.app/assets/Map.png" alt="Project image" width="100%" height="100%"> -->
                         <img [src]="data.image" alt="Project image" width="100%" height="100%" class="image">
                     </div>
                 </div>
@@ -53,7 +50,8 @@
             </div>
         </div>
         <div class="footer">
-            <app-footer></app-footer>
+            <!-- <app-footer></app-footer> -->
+            <app-contact></app-contact>
         </div>
     </div>
 </div>
