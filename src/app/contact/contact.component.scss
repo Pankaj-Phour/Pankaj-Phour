@@ -165,12 +165,15 @@ button{
     color: #378c78;
     background-color: transparent;
     border: 2px solid #378c78;
+    display: flex;
+    column-gap: 10px;
 }
 
-.submit:hover{
+.submit{
     background-color: #378c78;
-    color: #378c78  !important;
+    color: white  !important;
     border: 1px solid white;
+    cursor: pointer;
 }
 a{
     text-decoration: none !important;
@@ -199,4 +202,8 @@ a{
     .error{
         left: 20%;
     }
+}
+
+::ng-deep .mat-progress-spinner[mode=indeterminate] circle{
+    stroke: white;
 }

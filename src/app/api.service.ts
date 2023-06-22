@@ -16,7 +16,7 @@ export class ApiService {
   notify$ = this._notify.asObservable();
 
   obNotify(data: any): void {
-    console.log(data);
+    // console.log(data);
     
     this._notify.next(data);
   }

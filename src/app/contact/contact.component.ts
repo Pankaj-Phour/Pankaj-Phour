@@ -10,6 +10,7 @@ import { ApiService } from '../api.service';
 export class ContactComponent implements OnInit {
 
   contactForm:FormGroup;
+  submitted:boolean = false;
   constructor(private _fb:FormBuilder, private api:ApiService) { }
 formValidation(){
   this.contactForm = this._fb.group({
@@ -23,6 +24,10 @@ formValidation(){
   }
 
   submit(){
+    this.submitted = true;
+    this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
+      console.log("response from api",next);
+    })
     setTimeout(() => {
       this.api.obNotify({
         start:true,
@@ -31,11 +36,9 @@ formValidation(){
         message:'Details Submitted Successfully'
       })
       this.contactForm.reset();
+      this.submitted = false;
       
-    }, 2000);
-    this.api.clientData('/userData',this.contactForm.value).subscribe((next:any)=>{
-      console.log("response from api",next);
-    })
+    }, 1500);
   }
 
   contact(index:any){
