@@ -21,10 +21,10 @@ export class NotificationComponent implements OnInit {
   constructor(private resolver: ComponentFactoryResolver, private _as: ApiService, private viewContainerRef:ViewContainerRef) { }
 
   ngOnInit() {
-    console.log("Hello from Notification component",this.container);
+    // console.log("Hello from Notification component",this.container);
     
     this._as.notify$.subscribe(next => {
-      console.log(next);
+      // console.log(next);
       
       if (next.start && this.messageList.indexOf(next.message) === -1) {
         this.addComponent(this.componentClass, next);
@@ -34,11 +34,11 @@ export class NotificationComponent implements OnInit {
 
   addComponent(componentClass: Type<any>, config) {
 
-    console.log(this.container,componentClass);
+    // console.log(this.container,componentClass);
     
     const componentFactory = this.resolver.resolveComponentFactory(componentClass);
     const component = this.container.createComponent(componentFactory);
-    console.log(this.container,component);
+    // console.log(this.container,component);
     
     component.instance.status = config.status;
     component.instance.limit = config.s ? config.s : 1;

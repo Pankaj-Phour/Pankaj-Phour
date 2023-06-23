@@ -1,8 +1,8 @@
 <div class="body">
     <div class="container">
-        <div class="top" #top>
+        <!-- <div class="top" #top>
             <app-navbar></app-navbar>
-        </div>
+        </div> -->
         <div class="middle">
             <div class="contact">
                 <div class="left">
@@ -45,7 +45,10 @@
                                     <!-- <p class="error" *ngIf="contactForm.get('contact').hasError('required') && contactForm.get('contact').touched">*Message is required.</p> -->
                                 </div>
                                 <div class="buttongroup">
-                                    <button [ngClass]="contactForm.valid  ? 'submit' : ''" [ngStyle]="{'border':contactForm.valid ? '1px solid #378c78' : '', 'color': contactForm.valid ? '#378c78' : '#378c78'}" (click)="submit()">Submit</button>
+                                    <button [ngClass]="contactForm.valid  ? 'submit' : ''" [ngStyle]="{'border':contactForm.valid ? '1px solid #378c78' : '', 'color': contactForm.valid ? '#378c78' : '#378c78','padding-inline': submitted ? '25px' : '30px'}" (click)="submit()">
+                                        Submit
+                                        <mat-spinner *ngIf="submitted" [diameter]="'22'"></mat-spinner>
+                                    </button>
                                 </div>
                             </form>
                         </form>
