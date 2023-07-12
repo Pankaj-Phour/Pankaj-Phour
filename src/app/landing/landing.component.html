@@ -28,6 +28,7 @@
             </div>
                 </div>
             <div class="projects section" *ngFor="let data of Projects;let i=index">
+                <div class="heading" [ngStyle]="{'text-align':i%2!==0 ? 'left' : 'right'}">{{data.name}}</div>
                 <div class="project1" [ngStyle]="{'display':'flex','flex-direction':i%2!==0 ? 'row' : 'row-reverse'}">
                     <div class="aboutleft">
                         <div class="leftText1">

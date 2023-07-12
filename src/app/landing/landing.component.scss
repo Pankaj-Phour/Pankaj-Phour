@@ -201,8 +201,12 @@ a:hover{
     z-index: 100;
 }
 
-
-
+.heading{
+    color: #378c78;
+    font-size: 35px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
 
 
 
@@ -284,5 +288,9 @@ a:hover{
     }
     .leftSide{
         display: none;
+    }
+    .heading{
+        font-size: 22px;
+        text-align: center !important;
     }
 }
