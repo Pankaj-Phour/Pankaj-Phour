@@ -206,41 +206,20 @@ a:hover{
     font-size: 35px;
     padding-inline: 20px;
     padding-block: 10px;
+    cursor: pointer;
+
+}
+.heading:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
 }
 
 
-
-
-
-
-
-// CSS for the sliding sections 
-
-// #section1{
-//     animation: slide1 0.5s forwards;
-//     animation-delay: 1s;
-//     // opacity: 0.3;
-//     position: absolute;
-//     left: -600px;
-//   }
-
-//   @-webkit-keyframes slide1 {
-//     100% { left: 0%; }
-//   }
-//   @keyframes slide1 {
-//     100% { left: 0%; }
-//   }
-
-
-
-
-
-
-
-
-
-
-
+.project1 .aboutright img:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease-in-out;
+    width: 100%;
+}
 
 // MediaQuesries for the Mobile UI 
 @media only screen and (max-width: 768px){
