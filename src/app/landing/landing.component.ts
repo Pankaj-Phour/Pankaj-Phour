@@ -60,4 +60,8 @@ Sliding:boolean = false;
       this.imageDivChecker()
     }, 100);
   }
+
+  redirect(url:any){
+    window.open(url,'_blank')
+  }
 }
