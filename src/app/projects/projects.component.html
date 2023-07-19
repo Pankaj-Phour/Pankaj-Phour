@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<div class="body">
+    <div class="parent">
+        <div class="bottom">
+            <div class="container">
+                    <div id="section">
+<div class="projects section" *ngFor="let data of Projects;let i=index">
+    <div class="heading" [ngStyle]="{'text-align':i%2!==0 ? 'left' : 'right'}" (click)="redirect(data.url)">{{data.name}}</div>
+    <div class="project1" [ngStyle]="{'display':'flex','flex-direction':i%2!==0 ? 'row' : 'row-reverse'}">
+        <div class="aboutleft">
+            <div class="leftText1">
+                {{data.description}}
+            </div>
+        </div>
+        <div class="aboutright">
+            <img [src]="data.image" alt="Project image" width="100%" height="100%" class="image">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

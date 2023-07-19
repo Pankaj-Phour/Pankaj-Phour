@@ -1,0 +1,275 @@
+.body{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: black;
+
+}
+*{
+    font-family: 'roboto';
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+a:hover{
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    color: #378c78;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.parent{
+    background-color: black;
+    max-width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    // min-height: 100vh;
+    // height: 100%;
+    overflow-x: hidden;
+}
+.top{
+    display: flex;
+    width: 100vw;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+    width: 100%;
+}
+.container{
+    max-width: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    margin-block: 8%;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+.text1{
+    color: #378c78;
+    font-size: 16px;
+    font-family:'roboto';
+    line-height: 2.2;
+}
+.text2{
+    font-size: 58px;
+    color: white;
+    font-weight: 500;
+    font-family:'roboto';
+    line-height: 1.5;
+}
+.text3{
+    font-size: 58px;
+    color: #8892b0;
+    font-weight: 500;
+    font-family:'roboto';
+    line-height: 1.5;
+}
+.text4{
+    max-width: 100%;
+    width: 70%;
+    font-size: 17px;
+    color: gray;
+    font-family:'roboto';
+    line-height: 1.5;
+}
+
+.introButton{
+    padding: 8px;
+    padding-inline: 28px;
+    font-size: 24px;
+    font-family: 'roboto';
+    color: #378c78;
+    border: 2px solid #378c78;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+.introButton:hover{
+    cursor: pointer;
+    background-color: #378c78;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 7px 1px;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+.aboutleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 20px;
+    color: gray;
+    font-size: 18px;
+    max-width: 100%;
+    width: 45%;
+    padding: 20px;
+    border: 2px solid gray;
+}
+.aboutleft:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 1px 1px 1px;
+}
+.image:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 1px 1px 1px;
+
+}
+.aboutright{
+    max-width: 100%;
+    width: 45%;
+}
+
+
+.project1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+    font-size: 17px;
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+.leftSide{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 98%;
+    top: 80%;
+    color: gray;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rightSide{
+        position: fixed;
+        transform: translate(-50%,-50%);
+        left: 2%;
+        top: 80%;
+        color: gray;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.email{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.email:hover{
+    padding-right: 5px;
+    color: #378c78 !important;
+}
+.line{
+    transform: rotate(90deg);
+}
+
+
+.loader{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+}
+
+.heading{
+    color: #378c78;
+    font-size: 35px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    cursor: pointer;
+
+}
+.heading:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+}
+
+
+.project1 .aboutright img:hover{
+    transform: scale(1.1);
+    transition: 0.8s ease-in-out;
+    width: 100%;
+}
+
+// MediaQuesries for the Mobile UI 
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro{
+        max-width: 100%;
+        width: 80%;
+    }
+    .text2{
+        font-size: 45px;
+    }
+    .text3{
+        font-size: 45px;
+        line-height: 1;
+    }
+    .text4{
+        font-size: 14px;
+        width: 100%;
+    }
+    .project1,.about{
+        display: flex;
+        flex-direction: column !important;
+        font-size: 12px !important;
+        row-gap: 15px;
+        padding-block: 4% !important;
+        border-bottom: 2px solid gray;
+    }
+    .aboutleft{
+        font-size: 12px !important;
+        max-width: 100%;
+        width: 85%;
+        border: none;
+    }
+    .aboutright{
+        max-width: 100%;
+        width: 85%;
+    }
+    .rightSide{
+        display: none;
+    }
+    .leftSide{
+        display: none;
+    }
+    .heading{
+        font-size: 22px;
+        text-align: center !important;
+    }
+}
