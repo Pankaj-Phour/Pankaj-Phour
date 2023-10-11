@@ -49,7 +49,7 @@ formValidation(){
       window.open("mailTo:pankaj.phour70@gmail.com","_blank")
     }
     else if(index == 2){
-      window.open("http://wa.me/9518455298","_blank")
+      window.open("https://wa.me/919518455298","_blank")
     }
   }
 
