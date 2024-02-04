@@ -22,7 +22,7 @@ export class ApiService {
   }
 
   healthChecker(endpoint:String){
-    this.http.get(environment.Url + endpoint)
+    return this.http.get(environment.Url + endpoint)
   }
 
   clientData(endpoint:any,params:any){
