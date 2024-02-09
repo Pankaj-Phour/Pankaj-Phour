@@ -28,19 +28,19 @@
 		<nav class="main-nav" id="main-nav">
 			<ul>
 				<li>
-					<p>About me</p>
+					<p routerLink="/about" (click)="toggleNav()">About me</p>
 				</li>
 				<li>
-					<p>Experience</p>
+					<p routerLink="/about" (click)="toggleNav()">Experience</p>
 				</li>
 				<li>
-					<p>Projects</p>
+					<p routerLink="/projects" (click)="toggleNav()">Projects</p>
 				</li>
 				<li>
-					<p routerLink="/contact">Contact</p>
+					<p routerLink="/contact" (click)="toggleNav()">Contact</p>
 				</li>
 				<li>
-					<a href="/assets/pankaj.pdf" download="/assets/pankaj.pdf">Resume</a>
+					<a href="/assets/pankaj.pdf" download="/assets/pankaj.pdf" (click)="toggleNav()">Resume</a>
 				</li>
 			</ul>
 		</nav>
