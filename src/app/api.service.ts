@@ -21,6 +21,10 @@ export class ApiService {
     this._notify.next(data);
   }
 
+  healthChecker(endpoint:String){
+    return this.http.get(environment.Url + endpoint)
+  }
+
   clientData(endpoint:any,params:any){
     return this.http.post(environment.Url + endpoint,params)
   }

@@ -1,10 +1,4 @@
-.body{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // background-color: black;
 
-}
 *{
     font-family: 'roboto';
 }
@@ -30,9 +24,8 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    // min-height: 100vh;
-    // height: 100%;
     overflow-x: hidden;
+    color: white;
 }
 .top{
     display: flex;
@@ -45,187 +38,180 @@ a:hover{
     align-items: center;
     max-width: 100vw;
     width: 100%;
+    // opacity: 0.6;
 }
 .container{
     max-width: 100%;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-.section{
-    margin-block: 8%;
-}
-.intro{
-    display: flex;
-    flex-direction: column;
-}
-.text1{
-    color: #378c78;
-    font-size: 16px;
-    font-family:'roboto';
-    line-height: 2.2;
-}
-.text2{
-    font-size: 58px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/assets/aboutLanding.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
-    font-weight: 500;
-    font-family:'roboto';
-    line-height: 1.5;
-}
-.text3{
-    font-size: 58px;
-    color: #8892b0;
-    font-weight: 500;
-    font-family:'roboto';
-    line-height: 1.5;
-}
-.text4{
-    max-width: 100%;
-    width: 70%;
-    font-size: 17px;
-    color: gray;
-    font-family:'roboto';
-    line-height: 1.5;
-}
-
-.introButton{
-    padding: 8px;
-    padding-inline: 28px;
-    font-size: 24px;
-    font-family: 'roboto';
-    color: #378c78;
-    border: 2px solid #378c78;
-    background-color: transparent;
-    border-radius: 10px;
-    margin-top: 3%;
-}
-.introButton:hover{
-    cursor: pointer;
-    background-color: #378c78;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 3px 7px 1px;
+    height: 700px;
+   
 }
 .about{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    width: 100%;
+    width: 90%;
 }
 .aboutleft{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     row-gap: 20px;
-    color: gray;
     font-size: 18px;
     max-width: 100%;
     width: 45%;
     padding: 20px;
-    border: 2px solid gray;
-}
-.aboutleft:hover{
-    cursor: pointer;
-    box-shadow: rgba(255, 255, 255, 0.56) 0px 1px 1px 1px;
-}
-.image:hover{
-    cursor: pointer;
-    box-shadow: rgba(255, 255, 255, 0.56) 0px 1px 1px 1px;
-
+    .heading{
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #378c78;
+    }
+    .leftText{
+        line-height: 30px;
+    }
 }
 .aboutright{
     max-width: 100%;
     width: 45%;
+    height: 100%;
+    padding-block: 30px;
 }
-
-
-.project1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: gray;
-    font-size: 17px;
-    flex-direction: row-reverse;
-}
-
-
-
-
-
-
-
-
-
-
-
-.leftSide{
-    position: fixed;
-    transform: translate(-50%,-50%);
-    left: 98%;
-    top: 80%;
-    color: gray;
-    height: 225px;
+.skillBox{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.rightSide{
-        position: fixed;
-        transform: translate(-50%,-50%);
-        left: 2%;
-        top: 80%;
-        color: gray;
-        height: 225px;
+    align-items: flex-start;
+    // row-gap: 20px;
+    height: 100%;
+    .skill{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-}
-.email{
-    transform: rotate(90deg);
-    cursor: pointer;
-}
-.email:hover{
-    padding-right: 5px;
-    color: #378c78 !important;
-}
-.line{
-    transform: rotate(90deg);
-}
-
-
-.loader{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    z-index: 100;
+        justify-content: space-around;
+        align-items: flex-start;
+        row-gap: 5px;
+        width: 100%;
+        .completeRange{
+            width: 90%;
+            height: 10px;
+            border: 2px solid #378c78;
+            border-radius: 20px;
+            .skillRange{
+                background-color: #378c78;
+                height: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
 }
 
 
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-block: 70px;
+    row-gap: 50px;
+    .heading{
+        font-size: 48px;
+        color: #378c78;
+        font-weight: 600;
+    }
+    .workBox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        .workCard{
+            width: 400px;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            box-shadow: 2px 4px 4px rgba(255,255,255,0.6);
+            padding-block: 30px;
+            row-gap: 20px;
+            border: 2px solid white;
+            margin-bottom: 50px;
+            .top{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .workHeading{
+                color: #378c78;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+            }
+            .left{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .workImage{
+                    // border-radius: 50%;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 2px solid #378c78;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        height: 95%;
+                        width: 95%;
+                        object-fit: contain;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .right{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                row-gap: 20px;
+                padding-inline: 15px;
+                .workText{
+                    line-height: 30px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-align: justify;
+                }
+            }
+        }
+        .workCard:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
 
-
-
-
-
-
-
-
-// CSS for the sliding sections 
-
-// #section1{
-//     animation: slide1 0.5s forwards;
-//     animation-delay: 1s;
-//     // opacity: 0.3;
-//     position: absolute;
-//     left: -600px;
-//   }
-
-//   @-webkit-keyframes slide1 {
-//     100% { left: 0%; }
-//   }
-//   @keyframes slide1 {
-//     100% { left: 0%; }
-//   }
 
 
 
@@ -245,44 +231,59 @@ a:hover{
         width: 100%;
         justify-content: center;
         align-items: center;
+        height: 100%;
     }
-    .intro{
-        max-width: 100%;
-        width: 80%;
-    }
-    .text2{
-        font-size: 45px;
-    }
-    .text3{
-        font-size: 45px;
-        line-height: 1;
-    }
-    .text4{
-        font-size: 14px;
-        width: 100%;
-    }
-    .project1,.about{
+    .about{
         display: flex;
-        flex-direction: column !important;
-        font-size: 12px !important;
-        row-gap: 15px;
-        padding-block: 4% !important;
-        border-bottom: 2px solid gray;
+        flex-direction: column;
     }
     .aboutleft{
-        font-size: 12px !important;
         max-width: 100%;
-        width: 85%;
+        width: 100%;
         border: none;
+        row-gap: 10px;
+        .heading{
+            font-size: 28px;
+        }
+        .leftText{
+            font-size: 14px;
+            line-height: 24px;
+        }
     }
     .aboutright{
         max-width: 100%;
-        width: 85%;
+        width: 100%;
     }
-    .rightSide{
-        display: none;
+    .skillBox{
+        row-gap: 25px;
+        .skill{
+            .completeRange{
+                width: 100%;
+            }
+        }
     }
-    .leftSide{
-        display: none;
+    .work{
+    .workBox{
+        display: flex;
+        flex-direction: column;
+        .workCard{
+            width: 320px;
+            .workHeading{
+                font-size: 18px;
+            }
+            .left{
+                .workImage{
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+            .right{
+                .workText{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
     }
+}
 }

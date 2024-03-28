@@ -1,20 +1,71 @@
 <div class="body">
     <div class="parent">
-        <div class="bottom">
-            <div class="container">
-                    <div id="section">
-            <div class="about section" [id]="'section1'">
-                <div class="aboutleft">
-                    <div class="leftText1">Hello! My name is Pankaj Phour and I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try creating some designs for web pages — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</div>
-                    <div class="leftText2">Fast-forward to today, and I’ve had the privilege of working at a start-up company(service based) and then in a huge corporation(product based). My main focus these days is building web applications with reusable code and digital experiences at Monet Networks for a variety of clients.</div>
-                    <div class="leftText3">I also recently build some of my own projects to get user's video, face detection, location detector, Tour-Travels website and these days i've been working to build a chat application. You can view my projects at <a href="https://github.com/pankaj-phour" target="blank" class="link">My Github Account.</a></div>
-                </div>
-                <div class="aboutright">
-                    <img src="https://avatars.githubusercontent.com/u/95477824?v=4" height="100%" width="100%" >
-                </div>
+  <div class="container">
+    <div class="about section" [id]="'section1'">
+      <div class="aboutleft">
+        <div class="heading">About me</div>
+        <div class="leftText">
+          Hello! My name is Pankaj Phour and I enjoy creating things that live
+          on the internet. My interest in web development started back in 2019
+          when I decided to try creating some designs for web pages — turns out
+          hacking together a custom reblog button taught me a lot about HTML &
+          CSS!
+        </div>
+        <div class="leftText">
+          Fast-forward to today, and I’ve had the privilege of working at a
+          start-up company(service based) and then in a huge corporation(product
+          based). My main focus these days is building web applications with
+          reusable code and digital experiences at Monet Networks for a variety
+          of clients.
+        </div>
+        <div class="leftText">
+          I also recently build some of my own projects to get user's video,
+          face detection, location detector, Tour-Travels website and these days
+          i've been working to build a chat application. You can view my
+          projects at
+          <a href="https://github.com/pankaj-phour" target="blank" class="link"
+            >My Github Account.</a
+          >
+        </div>
+      </div>
+      <div class="aboutright">
+        <!-- <img src="https://avatars.githubusercontent.com/u/95477824?v=4" height="100%" width="100%" > -->
+        <div class="skillBox">
+          <div class="skill" *ngFor="let skill of skills">
+            <div class="skillName">
+              {{ skill.name }} {{ skill.value + '%' }}
             </div>
+            <div class="completeRange">
+              <div
+                class="skillRange"
+                [ngStyle]="{ width: skill.value + '%' }"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="work section">
+    <div class="heading">
+      WHAT I DO  
+    </div>
+    <div class="workBox">
+        <div class="workCard" *ngFor="let work of works">
+            <div class="top">
+                <div class="workHeading">{{work.name}}</div>
+            </div>
+            <div class="bottom">
+
+                <div class="left">
+                    <div class="workImage"><img [src]="work.image"></div>
+                </div>
+                <div class="right">
+                    <div class="workText">{{work.text}}</div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+  </div>
 </div>
