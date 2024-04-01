@@ -3,7 +3,7 @@
         <div class="bottom">
             <div class="container">
                     <div id="section">
-<div class="projects section" *ngFor="let data of Projects;let i=index">
+<!-- <div class="projects section" *ngFor="let data of Projects;let i=index">
     <div class="heading" [ngStyle]="{'text-align':i%2!==0 ? 'left' : 'right'}" (click)="redirect(data.url)">{{data.name}}</div>
     <div class="project1" [ngStyle]="{'display':'flex','flex-direction':i%2!==0 ? 'row' : 'row-reverse'}">
         <div class="aboutleft">
@@ -15,9 +15,26 @@
             <img [src]="data.image" alt="Project image" width="100%" height="100%" class="image">
         </div>
     </div>
+</div> -->
+<div class="projects">
+<div class="projectCard" *ngFor="let project of Projects;let i = index">
+    <div class="projectHeading">
+        {{project.name}}
+    </div>
+    <div class="projectImage">
+        <img [src]="project.image" alt="Project image" width="100%" height="100%" class="image"> 
+    </div>
+    <div class="projectText">
+        {{project.description}}
+    </div>
+</div>
+                    </div>
 </div>
 </div>
 </div>
+<div class="footer">
+    <!-- <app-footer></app-footer> -->
+    <app-contact></app-contact>
 </div>
 </div>
 </div>

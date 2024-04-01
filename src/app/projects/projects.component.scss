@@ -23,7 +23,7 @@ a:hover{
     text-decoration: underline;
 }
 .parent{
-    background-color: black;
+    background-color: #0a192f;
     max-width: 100vw;
     width: 100%;
     display: flex;
@@ -45,10 +45,11 @@ a:hover{
     align-items: center;
     max-width: 100vw;
     width: 100%;
+    padding-block: 40px;
 }
 .container{
     max-width: 100%;
-    width: 70%;
+    // width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -271,5 +272,59 @@ a:hover{
     .heading{
         font-size: 22px;
         text-align: center !important;
+    }
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 30px;
+}
+.projectCard{
+    height: 400px;
+    max-width: 500px;
+    min-width: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    row-gap: 20px;
+    padding-block: 20px;
+    font-family: 'Roboto';
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 4px 8px;
+    border-radius: 20px;
+    .projectHeading{
+        font-size: 24px;
+        font-weight: bold;
+        color: #378c78;
+        // color: white;
+    } 
+    .projectImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .projectText{
+        font-size: 16px;
+        color: darkgray;
+        // color: #378c78;
+        color: rgba(0,0,0,0.75);
+        padding-inline: 20px;
+        line-clamp: 6;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
     }
 }
