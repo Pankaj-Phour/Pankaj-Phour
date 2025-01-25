@@ -33,7 +33,7 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=pankaj-phour&show_icons=true&locale=en&layout=compact" alt="pankaj-phour" /></p>
 </td>
 <td>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=pankaj-phour&" alt="pankaj-phour" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=pankaj-phour" alt="pankaj-phour" /></p>
 </td>
 </tr>
 </table>
