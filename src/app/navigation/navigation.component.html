@@ -1,0 +1,46 @@
+<nav class="navigation">
+  <div class="nav-container">
+    <div class="nav-content">
+      <button class="nav-logo" (click)="scrollToSection('hero')">
+        <span class="bracket"><</span>
+        Portfolio
+        <span class="bracket">/></span>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-menu desktop">
+        <button
+          *ngFor="let item of navItems"
+          class="nav-link"
+          (click)="scrollToSection(item.id)"
+        >
+          {{ item.label }}
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle mobile" (click)="toggleMenu()">
+        <svg *ngIf="!isOpen" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg *ngIf="isOpen" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div *ngIf="isOpen" class="nav-menu mobile-menu">
+      <button
+        *ngFor="let item of navItems"
+        class="nav-link-mobile"
+        (click)="scrollToSection(item.id)"
+      >
+        {{ item.label }}
+      </button>
+    </div>
+  </div>
+</nav>

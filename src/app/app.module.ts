@@ -18,6 +18,8 @@ import { ContactComponent } from './contact/contact.component';
 import { NotifyComponent } from './notify/notify.component';
 import { NotificationComponent } from './notification/notification.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     NotifyComponent,
     NotificationComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectCardComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

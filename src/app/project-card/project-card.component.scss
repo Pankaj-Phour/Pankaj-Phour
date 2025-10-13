@@ -1,0 +1,102 @@
+@import '../../vars';
+
+.project-card {
+  background: rgba($card-bg, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-lg;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: $shadow-2xl;
+    transform: translateY(-0.5rem);
+  }
+}
+
+.project-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: $secondary-bg;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s;
+  }
+
+  .image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .image-overlay {
+      opacity: 1;
+    }
+  }
+}
+
+.project-header {
+  padding: 1.5rem 1.5rem 0.5rem;
+
+  .project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+  }
+
+  .project-description {
+    color: $text-muted;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.project-card:hover .project-title {
+  color: $primary-color;
+}
+
+.project-content {
+  padding: 1rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: $secondary-bg;
+  color: $text-primary;
+  border-radius: $radius-sm;
+  font-size: 0.75rem;
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.5rem;
+
+  a {
+    flex: 1;
+  }
+}
