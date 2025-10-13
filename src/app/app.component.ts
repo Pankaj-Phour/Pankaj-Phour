@@ -19,20 +19,22 @@ export class AppComponent {
     
   // }
     skills: string[] = [
-    'React',
-    'Angular',
-    'TypeScript',
-    'Node.js',
-    'Next.js',
-    'Tailwind CSS',
-    'SCSS',
-    'JavaScript',
-    'HTML/CSS',
-    'Git',
-    'REST APIs',
-    'MongoDB',
-    'PostgreSQL',
-    'Express',
+      'Angular',
+      'TypeScript',
+      'React',
+      'Node.js',
+      'SCSS',
+      'JavaScript',
+      'HTML/CSS',
+      'Git',
+      'REST APIs',
+      'MongoDB',
+      'Express',
+      'S3',
+      'EC2',
+      'Cloudfront',
+      'Load Balancing',
+      'Auto Scaling',
   ];
 
   projects: any = [
@@ -47,7 +49,7 @@ export class AppComponent {
     {
       title: 'Task Management App',
       description: 'Collaborative task management tool with real-time updates, drag-and-drop interface, and team features.',
-      image: 'https://images.unsplash.com/photo-1551650992-ee4fd47df41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+      image: 'assets/images/projects/task-manager1.png',
       technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
       liveUrl: '#',
       githubUrl: '#',
@@ -55,7 +57,7 @@ export class AppComponent {
     {
       title: 'Rehab Center',
       description: 'Portfolio webpage for a rehab center which contains details about the services offered by them and insights of their rehab center.',
-      image: 'https://images.unsplash.com/photo-1558181445-eca4774b2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+      image: 'assets/images/projects/rehab-center1.png',
       technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
       liveUrl: '#',
       githubUrl: '#',
