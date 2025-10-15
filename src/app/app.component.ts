@@ -62,6 +62,30 @@ export class AppComponent {
       liveUrl: '#',
       githubUrl: '#',
     },
+    {
+      title: 'Real Estate',
+      description: 'Portfolio webpage for a real estate firm which contains details about the projects, services offered by them and insights of their team and work.',
+      image: 'assets/images/projects/gorealtors1.png',
+      technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
+      liveUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Interior Designer',
+      description: 'Portfolio webpage for a interior designer firm which contains details about the services offered by them and insights of their projects and work.',
+      image: 'assets/images/projects/interior-designer1.png',
+      technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
+      liveUrl: '#',
+      githubUrl: '#',
+    },
+    {
+      title: 'Gym management',
+      description: 'A full-stack Gym management solution with workout section, user login, Schedule details and revenue insights functionality, payment integration, and admin dashboard.',
+      image: 'assets/images/projects/gym-management1.jpg',
+      technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
+      liveUrl: '#',
+      githubUrl: '#',
+    },
   ];
 
   scrollToSection(sectionId: string): void {
