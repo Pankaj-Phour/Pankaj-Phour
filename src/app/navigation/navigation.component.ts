@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -15,6 +16,8 @@ export class NavigationComponent {
     { label: 'Contact', id: 'contact' },
   ];
 
+  constructor(private router:Router){};
+
   toggleMenu(): void {
     this.isOpen = !this.isOpen;
   }
@@ -24,6 +27,9 @@ export class NavigationComponent {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       this.isOpen = false;
+    }
+    else{
+      this.router.navigate(['/'])
     }
   }
 }

@@ -7,15 +7,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectComponent } from './project/project.component';
 
 const routes: Routes = [
-  {path:'', component: LandingComponent},
-  {path:'nav', component: NavbarComponent},
-  {path:'home', component: HomeComponent},
-  {path:'footer', component: FooterComponent},
-  {path:'contact', component: ContactComponent},
-  {path:'about', component: AboutComponent},
-  {path:'projects', component: ProjectsComponent},
+  {path:'', component: HomeComponent},
+  // {path:'nav', component: NavbarComponent},
+  // {path:'home', component: HomeComponent},
+  // {path:'footer', component: FooterComponent},
+  // {path:'contact', component: ContactComponent},
+  // {path:'about', component: AboutComponent},
+  // {path:'projects', component: ProjectsComponent},
+  {path:'project-details', component: ProjectComponent},
 ];
 
 @NgModule({

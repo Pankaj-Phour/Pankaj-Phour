@@ -16,14 +16,15 @@
 
 .project-image {
   position: relative;
-  aspect-ratio: 16 / 9;
+  // aspect-ratio: 16 / 9;
   overflow: hidden;
   background: $secondary-bg;
+  height: 230px;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.5s;
   }
 
@@ -85,7 +86,7 @@
 
 .tech-badge {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.55rem;
   background: $secondary-bg;
   color: $text-primary;
   border-radius: $radius-sm;
@@ -96,7 +97,7 @@
   display: flex;
   gap: 0.5rem;
 
-  a {
+  a,div {
     flex: 1;
   }
 }

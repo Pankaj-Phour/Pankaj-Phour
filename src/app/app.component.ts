@@ -30,6 +30,7 @@ export class AppComponent {
       'REST APIs',
       'MongoDB',
       'Express',
+      'Python',
       'S3',
       'EC2',
       'Cloudfront',
@@ -43,7 +44,7 @@ export class AppComponent {
       description: 'A full-stack hotel management solution with room booking, food orders, expense management and revenue insights functionality, payment integration, and admin dashboard.',
       image: 'assets/images/projects/hotel-management1.jpg',
       technologies: ['Angular', 'Node.js', 'MongoDB', 'Razorpay'],
-      liveUrl: '#',
+      liveUrl: '',
       githubUrl: '#',
     },
     {
@@ -51,43 +52,43 @@ export class AppComponent {
       description: 'Collaborative task management tool with real-time updates, drag-and-drop interface, and team features.',
       image: 'assets/images/projects/task-manager1.png',
       technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://pankaj-taskmanager.netlify.app/',
+      githubUrl: 'https://github.com/Pankaj-Phour/Task-Manager',
     },
     {
       title: 'Rehab Center',
       description: 'Portfolio webpage for a rehab center which contains details about the services offered by them and insights of their rehab center.',
       image: 'assets/images/projects/rehab-center1.png',
       technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
-      liveUrl: '#',
-      githubUrl: '#',
-    },
-    {
-      title: 'Real Estate',
-      description: 'Portfolio webpage for a real estate firm which contains details about the projects, services offered by them and insights of their team and work.',
-      image: 'assets/images/projects/gorealtors1.png',
-      technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://humanawellness.org',
+      githubUrl: 'https://github.com/Pankaj-Phour/Medical-equipments',
     },
     {
       title: 'Interior Designer',
       description: 'Portfolio webpage for a interior designer firm which contains details about the services offered by them and insights of their projects and work.',
       image: 'assets/images/projects/interior-designer1.png',
       technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://dsmdecore.netlify.app/',
+      githubUrl: 'https://github.com/Pankaj-Phour/interior-designing',
     },
     {
       title: 'Gym management',
       description: 'A full-stack Gym management solution with workout section, user login, Schedule details and revenue insights functionality, payment integration, and admin dashboard.',
       image: 'assets/images/projects/gym-management1.jpg',
       technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: '',
+      githubUrl: 'https://github.com/Pankaj-Phour/GymPortal',
+    },
+    {
+      title: 'Real Estate',
+      description: 'Portfolio webpage for a real estate firm which contains details about the projects, services offered by them and insights of their team and work.',
+      image: 'assets/images/projects/gorealtors1.png',
+      technologies: ['Angular', 'Express', 'MongoDB', 'Node.js'],
+      liveUrl: 'https://gorealtors.co',
+      githubUrl: 'https://github.com/Pankaj-Phour/GoRealtors',
     },
   ];
-
+  
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
