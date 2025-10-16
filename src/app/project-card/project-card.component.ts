@@ -14,7 +14,7 @@ export class ProjectCardComponent {
 
  navigate(project:any){
   localStorage.setItem('project',JSON.stringify(project))
-  // this.router.navigate(['/project-details'])
+  this.router.navigate(['/project-details'])
  }
 
 }

@@ -52,3 +52,10 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+// Card mixin
+@mixin card {
+  background: $card-bg;
+  border-radius: $radius-lg;
+  overflow: hidden;
+}

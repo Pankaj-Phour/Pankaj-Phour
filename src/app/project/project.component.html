@@ -1,10 +1,208 @@
-<div class="body">
-    <div class="top">
-        <app-navigation></app-navigation>
+<div class="project-details">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <!-- Background Image with Overlay -->
+    <div class="hero-background">
+      <img [src]="project.image" [alt]="project.title" class="hero-image" />
+      <div class="hero-overlay"></div>
     </div>
-    <div class="container">
-        <div class="data">
-            
+
+    <!-- Animated background elements -->
+    <div class="animated-background">
+      <div class="bg-element bg-element-1"></div>
+      <div class="bg-element bg-element-2"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">{{ project.title }}</h1>
+        <p class="hero-description">{{ project.description }}</p>
+
+        <div class="tech-badges">
+          <span *ngFor="let tech of project.technologies" class="tech-badge">
+            {{ tech }}
+          </span>
         </div>
+
+        <div class="hero-actions">
+          <a *ngIf="project.liveUrl" [href]="project.liveUrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Metrics Section -->
+  <div class="metrics-container">
+    <div class="metrics-grid">
+      <div *ngFor="let metric of project.metrics" class="metric-card">
+        <div class="metric-content">
+          <div class="metric-icon">
+            <svg *ngIf="metric.icon === 'users'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <svg *ngIf="metric.icon === 'trending'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+              <polyline points="17 6 23 6 23 12"/>
+            </svg>
+            <svg *ngIf="metric.icon === 'rocket'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+            </svg>
+            <svg *ngIf="metric.icon === 'award'" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+          </div>
+          <div>
+            <div class="metric-value">{{ metric.value }}</div>
+            <div class="metric-label">{{ metric.label }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Sections -->
+  <div class="content-container">
+    <!-- Overview Section -->
+    <section class="content-section">
+      <div class="overview-grid">
+        <div class="overview-left">
+          <div class="section-badge">Overview</div>
+          <h2 class="section-title">Project Details</h2>
+          <p class="section-text">{{ project.detailedDescription }}</p>
+
+          <div class="project-meta">
+            <div class="meta-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <span>Timeline: {{ project.timeline }}</span>
+            </div>
+            <!-- <div class="meta-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              <span>Team: {{ project.team }}</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="overview-right">
+          <div class="challenge-solution-card">
+            <h3 class="card-title">The Challenge</h3>
+            <div class="card-content">
+              <p class="card-text">{{ project.challenge }}</p>
+            </div>
+          </div>
+
+          <div class="challenge-solution-card">
+            <h3 class="card-title">The Solution</h3>
+            <div class="card-content">
+              <p class="card-text">{{ project.solution }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="content-section">
+      <div class="section-header">
+        <div class="section-badge">Gallery</div>
+        <h2 class="section-title">Project Screenshots</h2>
+        <p class="section-subtitle">A visual tour through the key features and interfaces</p>
+      </div>
+
+      <div class="screenshots-grid">
+        <div *ngFor="let screenshot of project.screenshots; let i = index" class="screenshot-card">
+          <div class="screenshot-wrapper">
+            <img [src]="screenshot" [alt]="project.title + ' screenshot ' + (i + 1)" class="screenshot-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="content-section">
+      <div class="section-header">
+        <div class="section-badge">Features</div>
+        <h2 class="section-title">Key Features & Insights</h2>
+        <p class="section-subtitle">The standout capabilities that make this project unique</p>
+      </div>
+
+      <div class="features-grid">
+        <div *ngFor="let feature of project.features" class="feature-card">
+          <div class="feature-content">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"/>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+              </svg>
+            </div>
+            <p class="feature-text">{{ feature }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Deep Dive -->
+    <section class="content-section">
+      <div class="section-header">
+        <div class="section-badge">Tech Stack</div>
+        <h2 class="section-title">Technologies Used</h2>
+        <p class="section-subtitle">The powerful tools and frameworks that brought this project to life</p>
+      </div>
+
+      <div class="tech-stack-card">
+        <div class="tech-stack-content">
+          <div class="tech-stack-grid">
+            <div *ngFor="let tech of project.technologies" class="tech-stack-item">
+              {{ tech }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section">
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2 class="cta-title">Interested in Working Together?</h2>
+          <p class="cta-text">I'm always excited to take on new challenges and collaborate on innovative projects.</p>
+          <div class="cta-actions">
+            <button class="btn btn-primary" (click)="navigate()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              Back to Portfolio
+            </button>
+            <a href="mailto:your.email@example.com" class="btn btn-outline">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>

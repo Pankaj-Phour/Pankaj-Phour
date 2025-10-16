@@ -45,6 +45,66 @@ export class HomeComponent  {
       technologies: ['Angular', 'Node.js', 'MongoDB', 'Razorpay'],
       liveUrl: '',
       githubUrl: '#',
+      detailedDescription: 'A comprehensive hotel management platform built to handle and store users data. The platform features a modern, intuitive interface with secured user login and data processing, and advanced revenue insights and user management for business owners. Built with performance and scalability in mind, it handles thousands of concurrent users while maintaining sub-second page load times.',
+      challenge: 'The main challenge was managing the security and privacy for different roles like which role can use which service. And another challenge was to send notifications to users about checkout time, food order status or other details.',
+      solution: 'Implemented role management system with sending encrypted tokens to frontend in browser with the user details so  the next time when a user requests a service first the user details were decrypted from the token and then service is granted to user on its role basis.',
+      features: [
+        'Real-time data synchronization across hotel rooms',
+        'Advanced bookings search with filters like name, contact etc.',
+        'Secure payment processing with multiple payment gateway integrations',
+        'Comprehensive admin dashboard with revenue insights and expense management',
+        'Responsive design optimized for mobile and desktop view',
+      ],
+      screenshots: [
+        'https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+        'https://images.unsplash.com/photo-1629697776809-f37ceac39e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+        'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080'
+      ],
+      metrics: [
+        { label: 'Daily Active Users', value: '1K+', icon: 'users' },
+        { label: 'Page Load Time', value: '< 1s', icon: 'rocket' },
+        { label: 'Uptime', value: '99.9%', icon: 'award' }
+      ],
+      timeline: '1 month',
+    },
+    {
+      title: 'Gym management',
+      description: 'A full-stack Gym management solution with workout section, user login, Schedule details and revenue insights functionality, payment integration, and admin dashboard.',
+      image: 'assets/images/projects/gym-management1.jpg',
+      technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/Pankaj-Phour/GymPortal',
+      detailedDescription: 'A comprehensive gym management platform built to handle and store users data. The platform features a modern, intuitive interface with secured user login and data processing, and advanced revenue insights and user management for business owners. Built with performance and scalability in mind, it handles thousands of concurrent users while maintaining sub-second page load times.',
+      challenge: 'The main challenge was managing the security and privacy for different roles like which role can use which service. And another challenge was to send notifications to users about plan expire, plan update or other details like public holiday, gym events etc.',
+      solution: 'Implemented role management system with sending encrypted tokens to frontend in browser with the user details so  the next time when a user requests a service first the user details were decrypted from the token and then service is granted to user on its role basis.',
+      features: [
+        'Real-time data synchronization across users',
+        'Advanced users search with filters like plan, name etc.',
+        'Secure payment processing with multiple payment gateway integrations',
+        'Comprehensive admin dashboard with revenue insights and reporting',
+        'Responsive design optimized for mobile and desktop view',
+      ],
+      screenshots: [
+        'https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+        'https://images.unsplash.com/photo-1629697776809-f37ceac39e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
+        'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080'
+      ],
+      metrics: [
+        { label: 'Daily Active Users', value: '1K+', icon: 'users' },
+        { label: 'Page Load Time', value: '< 1s', icon: 'rocket' },
+        { label: 'Uptime', value: '99.9%', icon: 'award' }
+      ],
+      timeline: '1 month',
+    },
+    {
+      title: 'Interior Designer',
+      description: 'Portfolio webpage for a interior designer firm which contains details about the services offered by them and insights of their projects and work.',
+      image: 'assets/images/projects/interior-designer1.png',
+      technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
+      liveUrl: 'https://dsmdecore.netlify.app/',
+      githubUrl: 'https://github.com/Pankaj-Phour/interior-designing',
     },
     {
       title: 'Task Management App',
@@ -61,22 +121,6 @@ export class HomeComponent  {
       technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
       liveUrl: 'https://humanawellness.org',
       githubUrl: 'https://github.com/Pankaj-Phour/Medical-equipments',
-    },
-    {
-      title: 'Interior Designer',
-      description: 'Portfolio webpage for a interior designer firm which contains details about the services offered by them and insights of their projects and work.',
-      image: 'assets/images/projects/interior-designer1.png',
-      technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
-      liveUrl: 'https://dsmdecore.netlify.app/',
-      githubUrl: 'https://github.com/Pankaj-Phour/interior-designing',
-    },
-    {
-      title: 'Gym management',
-      description: 'A full-stack Gym management solution with workout section, user login, Schedule details and revenue insights functionality, payment integration, and admin dashboard.',
-      image: 'assets/images/projects/gym-management1.jpg',
-      technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/Pankaj-Phour/GymPortal',
     },
     {
       title: 'Real Estate',

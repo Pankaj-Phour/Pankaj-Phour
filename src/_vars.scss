@@ -1,18 +1,39 @@
-// Colors
+// Primary Colors
+$primary: #6366f1;
 $primary-color: #6366f1;
+$primary-hover: #4f46e5;
 $primary-foreground: #ffffff;
 
-// Background
+// Background (Light Theme)
+$background: #f8f9fb;
 $bg-primary: #f8f9fb;
 $card-bg: #ffffff;
+$card: #ffffff;
 $secondary-bg: #ececf0;
+$muted: #ececf0;
 
-// Text
+// Text (Light Theme)
 $text-primary: #030213;
 $text-muted: #717182;
+
+// Border
 $border-color: rgba(0, 0, 0, 0.08);
 
-// Radius
+// Spacing
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-5: 1.25rem;
+$spacing-6: 1.5rem;
+$spacing-8: 2rem;
+$spacing-10: 2.5rem;
+$spacing-12: 3rem;
+$spacing-16: 4rem;
+$spacing-20: 5rem;
+$spacing-24: 6rem;
+
+// Border Radius
 $radius-sm: 0.5rem;
 $radius-md: 0.625rem;
 $radius-lg: 0.75rem;
