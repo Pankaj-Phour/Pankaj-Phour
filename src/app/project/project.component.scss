@@ -401,7 +401,7 @@
 }
 
 .screenshot-wrapper {
-  aspect-ratio: 16 / 9;
+//   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: $muted;
 }
@@ -409,8 +409,9 @@
 .screenshot-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
+  background-color: black;
 }
 
 // Features Grid

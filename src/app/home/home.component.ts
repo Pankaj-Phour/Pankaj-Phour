@@ -56,10 +56,10 @@ export class HomeComponent  {
         'Responsive design optimized for mobile and desktop view',
       ],
       screenshots: [
-        'https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
-        'https://images.unsplash.com/photo-1629697776809-f37ceac39e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
-        'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080'
+        'assets/images/projects/hotel-management2.png',
+        'assets/images/projects/hotel-management3.png',
+        'assets/images/projects/hotel-management4.png',
+        'assets/images/projects/hotel-management5.png'
       ],
       metrics: [
         { label: 'Daily Active Users', value: '1K+', icon: 'users' },
@@ -86,10 +86,10 @@ export class HomeComponent  {
         'Responsive design optimized for mobile and desktop view',
       ],
       screenshots: [
-        'https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
-        'https://images.unsplash.com/photo-1629697776809-f37ceac39e77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080',
-        'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080'
+        'assets/images/projects/gym-management2.png',
+        'assets/images/projects/gym-management3.png',
+        'assets/images/projects/gym-management4.png',
+        'assets/images/projects/gym-management5.png'
       ],
       metrics: [
         { label: 'Daily Active Users', value: '1K+', icon: 'users' },
