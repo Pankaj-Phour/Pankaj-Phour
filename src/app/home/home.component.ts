@@ -103,7 +103,7 @@ export class HomeComponent  {
       description: 'Portfolio webpage for a interior designer firm which contains details about the services offered by them and insights of their projects and work.',
       image: 'assets/images/projects/interior-designer1.png',
       technologies: ['Angular', 'TypeScript', 'MongoDB', 'Node.js'],
-      liveUrl: 'https://dsmdecore.netlify.app/',
+      liveUrl: 'https://dsmdecore.com/',
       githubUrl: 'https://github.com/Pankaj-Phour/interior-designing',
     },
     {
